@@ -131,10 +131,17 @@ export default function HomePage() {
       <section id="feedback" className="border-t border-white/25 px-4 py-8 md:px-8">
         <div className="mx-auto max-w-6xl text-center">
           <p className="text-lg font-semibold text-[var(--text)]">Developed by Team CodeNova</p>
-          <p className="mt-2 text-sm text-[var(--muted)]">
-            Rachakonda Lakshmi Sai Giridhar | Mani MahaLakshmi Vale | Pranathi Prathipati |
-            DonthiReddy Krishna Chaitanya | Emani Mahathi
-          </p>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[var(--muted)]">
+            <span>Rachakonda Lakshmi Sai Giridhar</span>
+            <span className="text-[var(--brand-soft)]">|</span>
+            <span>Mani MahaLakshmi Vale</span>
+            <span className="text-[var(--brand-soft)]">|</span>
+            <span>Pranathi Prathipati</span>
+            <span className="text-[var(--brand-soft)]">|</span>
+            <span>DonthiReddy Krishna Chaitanya</span>
+            <span className="text-[var(--brand-soft)]">|</span>
+            <span>Emani Mahathi</span>
+          </div>
         </div>
       </section>
 

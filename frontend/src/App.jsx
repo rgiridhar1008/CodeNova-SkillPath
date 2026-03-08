@@ -4,7 +4,6 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import PageSkeleton from "./components/PageSkeleton";
 import RoleGuard from "./components/RoleGuard";
 import AuthGuard from "./components/AuthGuard";
-import FloatingChatWidget from "./components/FloatingChatWidget";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const UserDashboardPage = lazy(() => import("./pages/UserDashboardPage"));
@@ -182,7 +181,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
-      <FloatingChatWidget />
     </ErrorBoundary>
   );
 }
