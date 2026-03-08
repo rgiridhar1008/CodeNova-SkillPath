@@ -3,7 +3,7 @@
 AI-powered career development platform for students and job seekers.
 
 ## Live Links
-- Frontend (Vercel): https://code-nova-skill-path-43h50swm6-giridhars-projects-49f7c999.vercel.app/
+- Frontend (Vercel): https://code-nova-skill-path.vercel.app/
 
 
 ## Stack Used In This Project
