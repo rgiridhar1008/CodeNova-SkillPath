@@ -1,0 +1,177 @@
+{
+  "Data Scientist": {
+    "skills": [
+      "Python",
+      "SQL",
+      "Statistics",
+      "Machine Learning",
+      "Data Visualization",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Deep Learning",
+      "Feature Engineering",
+      "A/B Testing",
+      "Power BI",
+      "Tableau",
+      "Data Cleaning"
+    ],
+    "courses": [
+      {
+        "title": "Machine Learning Specialization",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/specializations/machine-learning-introduction"
+      },
+      {
+        "title": "SQL for Data Science",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/topic/sql/"
+      },
+      {
+        "title": "Python Data Analysis",
+        "provider": "DataCamp",
+        "url": "https://www.datacamp.com/tracks/data-scientist-with-python"
+      }
+    ]
+  },
+  "Web Developer": {
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "REST APIs",
+      "Git",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Testing",
+      "Next.js",
+      "Database Design",
+      "Authentication"
+    ],
+    "courses": [
+      {
+        "title": "The Odin Project Full Stack JavaScript",
+        "provider": "The Odin Project",
+        "url": "https://www.theodinproject.com/paths/full-stack-javascript"
+      },
+      {
+        "title": "React - The Complete Guide",
+        "provider": "Udemy",
+        "url": "https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+      },
+      {
+        "title": "Full-Stack Open",
+        "provider": "University of Helsinki",
+        "url": "https://fullstackopen.com/en/"
+      }
+    ]
+  },
+  "AI Engineer": {
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "PyTorch",
+      "TensorFlow",
+      "LLM Fine-tuning",
+      "Prompt Engineering",
+      "MLOps",
+      "Docker",
+      "Model Deployment",
+      "Vector Databases",
+      "NLP",
+      "RAG",
+      "Evaluation Metrics"
+    ],
+    "courses": [
+      {
+        "title": "Deep Learning Specialization",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/specializations/deep-learning"
+      },
+      {
+        "title": "LLM Engineering",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai/short-courses/"
+      },
+      {
+        "title": "MLOps Zoomcamp",
+        "provider": "DataTalks.Club",
+        "url": "https://github.com/DataTalksClub/mlops-zoomcamp"
+      }
+    ]
+  },
+  "Cloud Engineer": {
+    "skills": [
+      "Linux",
+      "Networking",
+      "AWS",
+      "Azure",
+      "Google Cloud",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Monitoring",
+      "Infrastructure as Code",
+      "Security Best Practices",
+      "Serverless",
+      "Bash Scripting"
+    ],
+    "courses": [
+      {
+        "title": "AWS Cloud Practitioner Essentials",
+        "provider": "AWS",
+        "url": "https://explore.skillbuilder.aws/learn"
+      },
+      {
+        "title": "Kubernetes for the Absolute Beginners",
+        "provider": "KodeKloud",
+        "url": "https://kodekloud.com/courses/"
+      },
+      {
+        "title": "Terraform Associate Prep",
+        "provider": "HashiCorp",
+        "url": "https://developer.hashicorp.com/terraform/tutorials"
+      }
+    ]
+  },
+  "Cybersecurity Analyst": {
+    "skills": [
+      "Network Security",
+      "SIEM",
+      "Incident Response",
+      "Threat Intelligence",
+      "Vulnerability Assessment",
+      "Penetration Testing",
+      "Security Operations",
+      "Risk Management",
+      "IAM",
+      "Firewalls",
+      "Python",
+      "Compliance",
+      "OWASP",
+      "Digital Forensics"
+    ],
+    "courses": [
+      {
+        "title": "Google Cybersecurity Professional Certificate",
+        "provider": "Coursera",
+        "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"
+      },
+      {
+        "title": "CompTIA Security+",
+        "provider": "CompTIA",
+        "url": "https://www.comptia.org/certifications/security"
+      },
+      {
+        "title": "TryHackMe SOC Level 1",
+        "provider": "TryHackMe",
+        "url": "https://tryhackme.com/path/outline/soclevel1"
+      }
+    ]
+  }
+}

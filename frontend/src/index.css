@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f8ff;
+  --panel: rgba(255, 255, 255, 0.65);
+  --text: #0d1a34;
+  --muted: #4d5e84;
+  --brand: #2f67f8;
+  --brand-soft: #79a0ff;
+}
+
+.dark {
+  --bg: #081126;
+  --panel: rgba(13, 29, 58, 0.66);
+  --text: #e8efff;
+  --muted: #adbedf;
+  --brand: #82a7ff;
+  --brand-soft: #5d79c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 15% 20%, #d8e5ff 0%, transparent 35%),
+    radial-gradient(circle at 85% 15%, #d1fbf3 0%, transparent 30%),
+    radial-gradient(circle at 50% 95%, #d8ddff 0%, transparent 35%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+section[id] {
+  scroll-margin-top: 92px;
+}
+
+.glass-card {
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.soft-grid {
+  background-image: linear-gradient(rgba(94, 111, 145, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 111, 145, 0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
