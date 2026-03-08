@@ -4,7 +4,7 @@ AI-powered career development platform for students and job seekers.
 
 ## Live Links
 - Frontend (Vercel): https://code-nova-skill-path-43h50swm6-giridhars-projects-49f7c999.vercel.app/
-- Backend (Render): https://codenova-skillpath.onrender.com
+
 
 ## Stack Used In This Project
 - Frontend: React (Vite), Tailwind CSS, Framer Motion, Chart.js, Lucide React
