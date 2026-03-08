@@ -45,6 +45,7 @@ class Database:
 
         self.mode = "none"
         self.conn = None
+        self.last_error = ""
         self._db_lock = RLock()
 
         if self._connect_sqlserver():
@@ -72,7 +73,8 @@ class Database:
                 self.mode = "sqlserver"
                 self._ensure_tables()
                 return True
-            except Exception:
+            except Exception as e:
+                self.last_error = f"SQL Server connect failed: {e}"
                 self.mode = "none"
                 self.conn = None
         return False
@@ -97,7 +99,8 @@ class Database:
                 self.mode = "mysql"
                 self._ensure_tables_mysql()
                 return True
-            except Exception:
+            except Exception as e:
+                self.last_error = f"MySQL connect failed: {e}"
                 self.mode = "none"
                 self.conn = None
         return False
@@ -109,7 +112,8 @@ class Database:
                 cursor.execute("SELECT 1")
                 cursor.close()
                 return True
-            except Exception:
+            except Exception as e:
+                self.last_error = f"SQL Server ping failed; reconnecting: {e}"
                 self.conn = None
                 self.mode = "none"
                 return self._connect_sqlserver() or self._connect_mysql()
@@ -118,12 +122,27 @@ class Database:
             try:
                 self.conn.ping(reconnect=True)
                 return True
-            except Exception:
+            except Exception as e:
+                self.last_error = f"MySQL ping failed; reconnecting: {e}"
                 self.conn = None
                 self.mode = "none"
                 return self._connect_sqlserver() or self._connect_mysql()
 
         return self._connect_sqlserver() or self._connect_mysql()
+
+    def diagnostics(self) -> dict[str, Any]:
+        return {
+            "mode": self.mode,
+            "hasMysqlHost": bool(self.mysql_host),
+            "hasMysqlUser": bool(self.mysql_user),
+            "hasMysqlDb": bool(self.mysql_db),
+            "hasMysqlPassword": bool(self.mysql_password),
+            "hasSqlServerHost": bool(self.sqlserver_host),
+            "hasSqlServerUser": bool(self.sqlserver_user),
+            "hasSqlServerDb": bool(self.sqlserver_db),
+            "hasSqlServerPassword": bool(self.sqlserver_password),
+            "lastError": self.last_error,
+        }
 
     def _ensure_tables(self):
         if not self.conn:

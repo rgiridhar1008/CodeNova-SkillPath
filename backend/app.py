@@ -43,6 +43,12 @@ def health():
     return jsonify({"status": "ok"})
 
 
+@app.get("/health/db")
+def health_db():
+    db._ensure_connection()
+    return jsonify({"status": "ok", "db": db.diagnostics()})
+
+
 @app.post("/auth/register")
 def auth_register():
     payload = request.get_json(force=True, silent=True) or {}
